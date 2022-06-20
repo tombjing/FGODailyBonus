@@ -79,12 +79,12 @@ def SendMessageToAdmin(message):
             print(message)
 
 # ===== ServerChan arguments =====
-ServerchanKey = ''
+#ServerchanKey = ''
 
-def SendMessageToAdmin(message):
-    if ServerchanKey != 'nullvalue':
-        nowtime = mytime.GetFormattedNowTime()
-        url = f'https://sctapi.ftqq.com/{ServerchanKey}.send?title={nowtime}&desp={message}'
+#def SendMessageToAdmin(message):
+#    if ServerchanKey != 'nullvalue':
+#        nowtime = mytime.GetFormattedNowTime()
+#        url = f'https://sctapi.ftqq.com/{ServerchanKey}.send?title={nowtime}&desp={message}'
 
 # ===== End =====
 
