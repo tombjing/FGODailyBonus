@@ -109,7 +109,7 @@ def UploadFileToRepo(filename, content, commit='updated'):
         },
         'content': content,
     }
-   if 'sha' in jobject:
+    if 'sha' in jobject:
         form['sha'] = jobject['sha']
     form = json.dumps(form)
     result = requests.put(url, data=form, headers=header)
