@@ -27,7 +27,8 @@ user_agent_ = 'Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.201105.003
 def ReadConf():
     data = json.loads(
         requests.get(
-            url=f'https://raw.githubusercontent.com/{github_name_}/FGODailyBonusLog/main/cfg.json', verify=False
+#            url=f'https://raw.githubusercontent.com/{github_name_}/FGODailyBonusLog/main/cfg.json', verify=False
+            url=f'https://raw.githubusercontent.com/{github_name_}/FGODailyBonus/master/cfg.json', verify=False
         ).text
     )
     global app_ver_, data_ver_, date_ver_, asset_bundle_folder_, data_server_folder_crc_
@@ -108,7 +109,7 @@ def UploadFileToRepo(filename, content, commit='updated'):
         },
         'content': content,
     }
-    if 'sha' in jobject:
+   if 'sha' in jobject:
         form['sha'] = jobject['sha']
     form = json.dumps(form)
     result = requests.put(url, data=form, headers=header)
