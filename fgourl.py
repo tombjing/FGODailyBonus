@@ -79,7 +79,7 @@ def SendMessageToAdmin(message):
             print(message)
 
 # ===== ServerChan arguments =====
- ServerchanKey = ''
+ServerchanKey = ''
 
  def SendMessageToAdmin(message):
     if ServerchanKey != 'nullvalue':
