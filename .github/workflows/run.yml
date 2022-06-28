@@ -4,8 +4,9 @@
 name: Python package
 
 on:
-  watch:
-    types: [started]
+  push:
+    branches:
+      - rm
   schedule:
     - cron: '30 21 * * *'
 
