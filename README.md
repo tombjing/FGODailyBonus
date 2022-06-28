@@ -1,11 +1,12 @@
 # 改动：
-1. 启动条件改为 点击Star/定时启动（日本时间5：30）
+1. 启动条件改为 点击Star/定时启动（日本时间5：30）  
 **双击右上角星星手动启动签到**
 
-2. `cfg.json`改为FGODailyBonus仓库内。
-   logs仍然上传FGODailyBonusLog仓库。
+2. `cfg.json`改为FGODailyBonus仓库内。部署时可跳过步骤2。  
+   logs仍然上传到FGODailyBonusLog仓库。  
+**FGODailyBonusLog仓库务必设置Private！！**
 
-3. 输出结果中用户名显示真实用户名
+3. 输出结果中用户名显示真实用户名  
 **FGODailyBonusLog仓库务必设置Private！！**
 
 
