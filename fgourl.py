@@ -28,8 +28,8 @@ def ReadConf():
     data = json.loads(
         requests.get(
 #            url=f'https://raw.githubusercontent.com/{github_name_}/FGODailyBonusLog/main/cfg.json', verify=False
-#            url=f'https://raw.githubusercontent.com/{github_name_}/FGODailyBonus/master/cfg.json', verify=False
-            url=f'https://raw.githubusercontent.com/hexstr/FGODailyBonusLog/main/cfg.json', verify=False
+            url=f'https://raw.githubusercontent.com/{github_name_}/FGODailyBonus/master/cfg.json', verify=False
+#            url=f'https://raw.githubusercontent.com/hexstr/FGODailyBonusLog/main/cfg.json', verify=False
         ).text
     )
     global app_ver_, data_ver_, date_ver_, asset_bundle_folder_, data_server_folder_crc_
