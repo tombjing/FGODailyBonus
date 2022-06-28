@@ -1,3 +1,14 @@
+# 改动：
+1. 启动条件改为 点击star/定时启动（日本时间5：30）
+**双击右上角星星手动启动签到**
+
+2. `cfg.json`改为FGODailyBonus仓库内。
+   logs仍然上传FGODailyBonusLog仓库。
+
+3. 输出结果中用户名显示真实用户名
+**FGODailyBonusLog仓库务必设置Private！！**
+
+
 # FGODailyBonus
 `Fate/Go`每日签到脚本，自`2020/06/23`以来稳定运行中。  
 **但不排除有被封号的可能性，使用后果请自负。**
