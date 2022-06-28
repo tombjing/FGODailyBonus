@@ -1,6 +1,6 @@
 # 改动：
 1. 启动条件改为 修改分支rm/定时启动（日本时间5：30）
-**双击右上角星星手动启动签到**
+**随意修改rm分支手动启动签到**
 
 2. `cfg.json`改为FGODailyBonus仓库内。
    logs仍然上传FGODailyBonusLog仓库。
