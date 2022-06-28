@@ -82,7 +82,8 @@ class user:
         self.builder_.AddParameter('userState', str(userState))
         data = self.Post(f'{fgourl.server_addr_}/login/top?_userId={self.user_id_}')
 
-        self.name_ = hashlib.md5(data['cache']['replaced']['userGame'][0]['name'].encode('utf-8')).hexdigest()
+#        self.name_ = hashlib.md5(data['cache']['replaced']['userGame'][0]['name'].encode('utf-8')).hexdigest()
+        self.name_ = data['cache']['replaced']['userGame'][0]['name'].encode('utf-8')
         stone = data['cache']['replaced']['userGame'][0]['stone']
         lv = data['cache']['replaced']['userGame'][0]['lv']
         ticket = 0
