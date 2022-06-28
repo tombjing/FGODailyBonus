@@ -28,15 +28,21 @@ def ReadConf():
     data = json.loads(
         requests.get(
 #            url=f'https://raw.githubusercontent.com/{github_name_}/FGODailyBonusLog/main/cfg.json', verify=False
-            url=f'https://raw.githubusercontent.com/{github_name_}/FGODailyBonus/master/cfg.json', verify=False
+#            url=f'https://raw.githubusercontent.com/{github_name_}/FGODailyBonus/master/cfg.json', verify=False
+            url=f'https://raw.githubusercontent.com/hexstr/FGODailyBonusLog/main/cfg.json', verify=False
         ).text
     )
     global app_ver_, data_ver_, date_ver_, asset_bundle_folder_, data_server_folder_crc_
-    app_ver_ = data['global']['appVer']
-    data_ver_ = data['global']['dataVer']
-    date_ver_ = data['global']['dateVer']
-    asset_bundle_folder_ = data['global']['assetbundleFolder']
-    data_server_folder_crc_ = data['global']['dataServerFolderCrc']
+#    app_ver_ = data['global']['appVer']
+#    data_ver_ = data['global']['dataVer']
+#    date_ver_ = data['global']['dateVer']
+#    asset_bundle_folder_ = data['global']['assetbundleFolder']
+#    data_server_folder_crc_ = data['global']['dataServerFolderCrc']
+    app_ver_ = data['appVer']
+    data_ver_ = data['dataVer']
+    date_ver_ = data['dateVer']
+    asset_bundle_folder_ = data['assetbundleFolder']
+    data_server_folder_crc_ = data['dataServerFolderCrc']
 
 
 def WriteConf(data):
