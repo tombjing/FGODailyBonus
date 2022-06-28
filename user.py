@@ -82,8 +82,7 @@ class user:
         self.builder_.AddParameter('userState', str(userState))
         data = self.Post(f'{fgourl.server_addr_}/login/top?_userId={self.user_id_}')
 
-#        self.name_ = hashlib.md5(data['cache']['replaced']['userGame'][0]['name'].encode('utf-8')).hexdigest()
-        self.name_ = data['cache']['replaced']['userGame'][0]['name'].encode('utf-8')
+        self.name_ = hashlib.md5(data['cache']['replaced']['userGame'][0]['name'].encode('utf-8')).hexdigest()
         stone = data['cache']['replaced']['userGame'][0]['stone']
         lv = data['cache']['replaced']['userGame'][0]['lv']
         ticket = 0
@@ -97,7 +96,7 @@ class user:
         # 登陆天数
         login_days = data['cache']['updated']['userLogin'][0]['seqLoginCount']
         total_days = data['cache']['updated']['userLogin'][0]['totalLoginCount']
-        res = f'*{self.name_}*\n`登陆天数: {login_days}天 / {total_days}天\n'
+        res = f'*{user_id}*\n`登陆天数: {login_days}天 / {total_days}天\n'
 
         # 角色信息
         res += f'等级: {lv}\n石头: {stone}\n呼符: {ticket}\n'
